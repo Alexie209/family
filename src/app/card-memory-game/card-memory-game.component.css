@@ -1,0 +1,13 @@
+#main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+img{
+    width: 200px;
+    height: 240px;
+    border-radius: 1rem;
+  }
+p{
+    font-size: 30px;
+}

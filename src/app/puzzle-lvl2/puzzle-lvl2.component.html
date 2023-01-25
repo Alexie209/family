@@ -1,0 +1,87 @@
+<h1 class="lvl-class">Puzzle</h1>
+<h2 class="lvl-class">Puzzle cu bunica</h2>
+
+<div class="split left">
+    <div class="centered">
+        <div class="button-group">
+            <div class="row">
+                <div class="col">
+                    <button (click)="onAnswer(1)">
+                        <img src="./assets/img/buni-cut/1.png">
+                    </button>
+                    <button (click)="onAnswer(4)">
+                        <img src="./assets/img/buni-cut/4.png">
+                    </button>
+                    <button (click)="onAnswer(6)">
+                        <img src="./assets/img/buni-cut/6.png">
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button (click)="onAnswer(3)">
+                        <img src="./assets/img/buni-cut/3.png">
+                    </button>
+                    <button (click)="onAnswer(7)">
+                        <img src="./assets/img/buni-cut/7.png">
+                    </button>
+                    <button (click)="onAnswer(5)">
+                        <img src="./assets/img/buni-cut/5.png">
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button (click)="onAnswer(9)">
+                        <img src="./assets/img/buni-cut/9.png">
+                    </button>
+                    <button (click)="onAnswer(8)">
+                        <img src="./assets/img/buni-cut/8.png">
+                    </button>
+                    <button (click)="onAnswer(2)">
+                        <img src="./assets/img/buni-cut/2.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <div class="row">
+            <div class="col">
+                <img *ngIf="image9"
+                     src="./assets/img/buni-cut/9.png">
+                <img *ngIf="image8"
+                     src="./assets/img/buni-cut/8.png">
+                <img *ngIf="image7"
+                     src="./assets/img/buni-cut/7.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img *ngIf="image6"
+                     src="./assets/img/buni-cut/6.png">
+                <img *ngIf="image5"
+                     src="./assets/img/buni-cut/5.png">
+                <img *ngIf="image4"
+                     src="./assets/img/buni-cut/4.png">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img *ngIf="image3"
+                     src="./assets/img/buni-cut/3.png">
+                <img *ngIf="image2"
+                     src="./assets/img/buni-cut/2.png">
+                <img *ngIf="image1"
+                     src="./assets/img/buni-cut/1.png">
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

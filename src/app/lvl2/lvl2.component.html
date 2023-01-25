@@ -1,0 +1,18 @@
+<h1 class="lvl-class">Nivelul 2</h1>
+<h2 class="lvl-class">Cine este Matusa Lizei?</h2>
+
+<div class="button-group">
+  <button (click)="onAnswer(0)">
+    <img src="./assets/img/buni.png">
+  </button>
+
+  <button (click)="onAnswer(0)">
+    <img src="./assets/img/mama.png">
+  </button>
+
+  <button (click)="onAnswer(1)">
+    <img src="./assets/img/matusa.png">
+  </button>
+</div>
+<h3 *ngIf="number==1"> Felicitari</h3>
+<h5 *ngIf="number==0">X</h5>

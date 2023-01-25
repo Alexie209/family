@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+  <div class="maze-form">
+    <label for="nRow"># Linii</label>
+    <input id="nRow" type="number" [(ngModel)]="row" />
+    <label for="nCol"># Coloane</label>
+    <input id="nCol" type="number" [(ngModel)]="col" />
+    <button type="button" (click)="drawMaze()" style="font-family:'Times New Roman', Times, serif">Labirint nou</button>
+    <button type="button" (click)="solution()" style="font-family: 'Times New Roman', Times, serif;">Soluție</button>
+  </div>
+  <section>
+    <div id="center_div">
+      <div id="mama">
+        <img src="./assets/img/mama.png" style="width: 100px;height:150px">
+      </div>
+      <canvas id="maze" style="margin-left: 20px;margin-right: 20px;"></canvas>
+      <div id="copilu">
+        <img src="./assets/img/fratele.png" style="width: 100px;height:150px">
+      </div>
+      </div>
+  </section>
+  <section>
+    <div class="arrows">
+      <div><span (click)="move('Up')">⬆️</span></div>
+      <div>
+        <span (click)="move('Left')">⬅️</span>
+        <span (click)="move('Right')">➡️</span>
+      </div>
+      <div><span (click)="move('Down')">⬇️</span></div>
+    </div>
+  </section>
+</div>
